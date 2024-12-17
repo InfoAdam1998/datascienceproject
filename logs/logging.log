@@ -45,3 +45,142 @@ x==========x]
 [2024-12-17 02:27:49,296: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
 
 x==========x]
+[2024-12-17 21:38:42,094: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-12-17 21:38:42,102: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-12-17 21:38:42,110: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-17 21:38:42,117: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-12-17 21:38:42,123: INFO: common: created directory at: artifacts]
+[2024-12-17 21:38:42,124: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-12-17 21:38:42,131: INFO: data_ingestion: File already exists]
+[2024-12-17 21:38:42,155: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-12-17 21:41:49,309: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-12-17 21:41:49,313: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-12-17 21:41:49,314: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-17 21:41:49,317: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-12-17 21:41:49,318: INFO: common: created directory at: artifacts]
+[2024-12-17 21:41:49,319: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-12-17 21:41:49,319: INFO: data_ingestion: File already exists]
+[2024-12-17 21:41:49,329: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-12-17 21:41:49,329: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-12-17 21:41:49,330: ERROR: main: name 'DataValidationTrainingPipeline' is not defined]
+Traceback (most recent call last):
+  File "C:\Users\steve\Desktop\Notebooks\datascienceproject\main.py", line 16, in <module>
+    obj = DataValidationTrainingPipeline()
+NameError: name 'DataValidationTrainingPipeline' is not defined
+[2024-12-17 21:43:11,864: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-12-17 21:43:11,870: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-12-17 21:43:11,873: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-17 21:43:11,877: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-12-17 21:43:11,882: INFO: common: created directory at: artifacts]
+[2024-12-17 21:43:11,884: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-12-17 21:43:11,885: INFO: data_ingestion: File already exists]
+[2024-12-17 21:43:11,904: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-12-17 21:43:11,907: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-12-17 21:43:11,922: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-12-17 21:43:11,923: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-17 21:43:11,935: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-12-17 21:43:11,943: INFO: common: created directory at: artifacts]
+[2024-12-17 21:43:11,945: ERROR: main: "'ConfigBox' object has no attribute 'data'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 593, in box.box.Box.__getitem__
+KeyError: 'data'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 632, in box.box.Box.__getattr__
+  File "box\\box.py", line 620, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'data'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 634, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'data'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 648, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'data'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 593, in box.box.Box.__getitem__
+KeyError: 'data'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 632, in box.box.Box.__getattr__
+  File "box\\box.py", line 620, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'data'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 634, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'data'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\steve\Desktop\Notebooks\datascienceproject\main.py", line 20, in <module>
+    data_ingestion.initiate_data_validation()
+  File "C:\Users\steve\Desktop\Notebooks\datascienceproject\src\datascience\pipeline\data_validation_pipeline.py", line 12, in initiate_data_validation
+    data_validation_config = config.get_data_validation_config()
+  File "C:\Users\steve\Desktop\Notebooks\datascienceproject\src\datascience\config\configuration.py", line 30, in get_data_validation_config
+    config = self.config.data.data_validation
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 648, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'data'"
+[2024-12-17 21:44:17,979: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-12-17 21:44:17,983: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-12-17 21:44:17,985: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-17 21:44:17,989: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-12-17 21:44:17,990: INFO: common: created directory at: artifacts]
+[2024-12-17 21:44:17,992: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-12-17 21:44:17,994: INFO: data_ingestion: File already exists]
+[2024-12-17 21:44:18,007: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-12-17 21:44:18,011: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-12-17 21:44:18,015: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-12-17 21:44:18,019: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-17 21:44:18,029: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-12-17 21:44:18,034: INFO: common: created directory at: artifacts]
+[2024-12-17 21:44:18,036: INFO: common: created directory at: artifacts/data_validation]
+[2024-12-17 21:44:18,037: ERROR: main: name 'DataValiadtion' is not defined]
+Traceback (most recent call last):
+  File "C:\Users\steve\Desktop\Notebooks\datascienceproject\main.py", line 20, in <module>
+    data_ingestion.initiate_data_validation()
+  File "C:\Users\steve\Desktop\Notebooks\datascienceproject\src\datascience\pipeline\data_validation_pipeline.py", line 13, in initiate_data_validation
+    data_validation = DataValiadtion(config = data_validation_config)
+NameError: name 'DataValiadtion' is not defined
+[2024-12-17 21:45:59,918: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-12-17 21:45:59,922: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-12-17 21:45:59,931: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-17 21:45:59,948: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-12-17 21:45:59,950: INFO: common: created directory at: artifacts]
+[2024-12-17 21:45:59,951: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-12-17 21:45:59,952: INFO: data_ingestion: File already exists]
+[2024-12-17 21:45:59,967: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-12-17 21:45:59,970: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-12-17 21:45:59,979: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-12-17 21:45:59,981: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-17 21:45:59,985: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-12-17 21:45:59,987: INFO: common: created directory at: artifacts]
+[2024-12-17 21:45:59,990: INFO: common: created directory at: artifacts/data_validation]
+[2024-12-17 21:46:00,080: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
